@@ -1,0 +1,1096 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width: auto;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+
+font-family: 'Montserrat';
+/*УКАЗАТЬ ПУТЬ ДО ШРИФТА Montserrat-Regular.ttf */
+src: url('../fonts/Montserrat-Regular.ttf');
+
+
+font-weight: normal;
+font-style: normal;
+
+}
+
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500i&amp;subset=cyrillic');
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=cyrillic);
+
+ *, *:after, *:before {
+   transition: .5s ease-in-out;
+   /* добавим плавность переходов для всех элементов страницы*/
+}
+
+.hidden{
+opacity:0;
+}
+.visible{
+opacity:1;
+}
+
+ .header {
+	
+	position: absolute;
+	height: 10vh;
+	width: 100%;
+	line-height: 1;
+	background-color: #ffffff;
+	text-decoration: none;
+	z-index: 9999;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	z-index: 9999;
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.logo__link {
+	z-index: 9999;
+}
+
+.logo__img {
+	height: 10vh;
+	width: 10vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	z-index: 9999;
+}
+
+.link__2, .link__3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.link__2 {
+	width: 33%;
+}
+
+.link__2 a {
+	font-family: Montserrat, sans-serif;
+	font-size: 4vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.link__3 {
+	width: 33%;
+}
+
+.link__3 a {
+	font-family: Montserrat, sans-serif;
+	font-size: 4vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.link__2 a:hover {
+	text-decoration: underline; 
+}
+
+.link__3 a:hover {
+	text-decoration: underline; 
+}
+
+.img {
+	width: 3vh;
+	height: 3vh;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.container__4 {
+	margin-top: 10vh;
+	background-color: #A5A5A5;
+	opacity: 0.9;
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.f__block__1, .f__block__2 {
+	height: 15vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.f__block__1__1, .f__block__1__2, .f__block__1__3 {
+	width: 33%;
+	margin-top:2%;
+	display: flex;
+}
+
+.f__block__1__1, .f__block__1__2, .f__block__1__3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #000000;
+}
+
+.f__block__1__1 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__2 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__3 img {
+	width: 10vh;
+	height: 10vh;
+}
+
+.f__block__1__3__h1 {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+   font-size: 3.5vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.f__block__1__3__h1:hover {
+	text-decoration: underline;
+}
+
+.f__block__2 {
+	font-family: Montserrat; 
+	font-style: normal;
+	font-weight: normal;
+   font-size: 4vh;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+}
+
+.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1vh;
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 20px;
+  bottom: 2vh;
+}
+ 
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menubox{
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu-item {
+  display: block;
+  padding: 12px 24px;
+	font-family: Montserrat, sans-serif;
+	font-size: 3.5vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+  	transition-duration: .25s;
+  	display: flex;
+  	align-items: center;
+  	width: 100%;
+}
+.menu-item:hover {
+  background-color: #ECEFF1;
+}
+
+#menu-toggle{
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-btn > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menubox{
+  visibility: visible;
+  right: 0;
+}
+
+.burger-menu {
+	display: none;
+}
+
+.menu-item.category {
+	font-weight: bold;
+	font-style: italic;	
+}
+
+.menu-item.email img {
+	height: 5vh;
+}
+
+.menu-item.instagr img {
+	height: 5vh;
+}
+
+.menu-item.vkont img {
+	height: 5vh;
+}
+
+.menu-item__h1 {
+	font-size: 2vh;
+	margin-left: 5%;
+}
+
+.menubox li {
+	flex-direction: row;
+	width: 100%;
+}
+
+.mainmenubtn {
+   color: black;
+   border: none;
+   cursor: pointer;
+  	display: block;
+	font-family: Montserrat, sans-serif;
+	font-size: 3.5vh;
+	white-space: nowrap;
+	font-style: normal;
+	text-decoration: none;
+  	transition: 3s;
+  	display: flex;
+  	align-items: center;
+  	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding: 12px 24px;
+	margin-top: 1vh;
+	background-color: transparent;
+	  transition-duration: .25s;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+      transition-duration: .25s;
+}
+.dropdown-child {
+    display: none;
+    background-color: #ECEFF1;
+    min-width: 200px;
+      transition-duration: .25s;
+}
+.dropdown-child__a {
+	color: black;
+	padding: 15px;
+	padding-left: 10%;
+	text-decoration: none;
+	display: block;
+	font-family: Montserrat, sans-serif;
+	font-size: 3.5vh;
+	font-style: italic;
+	 display: flex;
+    align-items: center;
+    justify-content: flex-start;
+      transition-duration: .25s;
+}
+
+.dropdown-child__a:hover {
+    font-size: 4vh;
+      transition-duration: .25s;
+}
+
+.dropdown:hover .dropdown-child {
+	display: block;
+	transition: 3s;
+	  transition-duration: .25s;
+}
+
+.ul__main {
+ list-style: none; /*убираем маркеры списка*/
+ margin: 0; /*убираем отступы*/
+ padding-left: 0; /*убираем отступы*/
+ background:#fff; /*добавляем фон всему меню*/
+ height: 10vh; /*задаем высоту*/
+ font-family: Montserrat, sans-serif;
+ font-size: 3.5vh;
+ padding: auto;
+ margin: auto;
+} 
+.maina {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#fff; /*добавляем фон к пункту меню*/
+  color:#000; /*меняем цвет ссылок*/
+  font-family: Montserrat, sans-serif; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+ border: none; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+  	  padding:0px 15px; /*добавляем отступ*/
+  	  padding-top: 0vh;
+  	  display: flex;
+  	  flex-direction: row;
+}
+.maina:hover {
+  background:#ECEFF1;/*добавляем эффект при наведении*/
+}
+
+.main__li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+   font-size: 3.5vh;
+   z-index: 9999;
+}
+     
+    /*Стили для скрытого выпадающего меню*/
+    .main__li > .ul__main {
+        position:relative;
+        display:none;   
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    .main__li:hover > .ul__main {
+        display:block; 
+        width:100%;  /*Задаем ширину выпадающего меню*/      
+    }
+   .main__li:hover > .ul__main > .main__li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+
+.img__cat {
+	height: 4vh;
+	padding-left: 0;
+}
+
+.butt {
+	border: none;
+	padding-left: 10px;
+	background-color: transparent;
+
+}
+
+.butt:hover {
+	height: .2vh;
+}
+/* my code*/
+body{
+	font-family: Montserrat, sans-serif;
+}
+
+section{
+	padding: 0px 0px 25px 0px;
+}
+.intro{
+
+	padding-top: 65px;
+}
+.main-title{
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  animation: blur 4s ease-out infinite;
+	z-index: 2;
+}
+
+
+.below-text{
+	color: black;
+  font-size: 15px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  padding-bottom: 10px;
+}   
+ .container-my hr{
+	width: 1160px;
+	color: #B5B5B5;
+	align:center;
+	size:2px;
+	opacity: 0.7;
+}
+.block-text{
+	max-width: 800px;
+	width: 100%;
+	padding-top: 10px;
+	align-items: center;
+	justify-content: center;
+	/*float: right;*/
+	padding-left: 23%;
+}
+.block-text-under{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+}
+.block-body-tag{
+	font-family: Montserrat, sans-serif;
+	opacity: 0.4;
+	font-size: 10px;
+}
+
+.block-body-title{
+	font-family: Montserrat, sans-serif;
+	font-size: 24px;
+	opacity: 1;
+	font-weight: 600;
+	margin-right:50%;
+}
+.block-body-desciption{
+	font-size: 20px;
+	font-family: Montserrat, sans-serif;
+}
+.block-link-cont{
+	width: 110px;
+	max-height: 200px;
+	background-color: #ECECEC;
+	margin-top:-125px;
+	margin-left: 8%;
+	flex-direction: column;
+	padding:10px 25px 10px;
+	margin-right: 10%;
+	margin-bottom: 30px;
+}
+.block-tag{
+	font-family: Montserrat, sans-serif;
+	opacity: 0.4;
+	font-size: 10px;
+}
+.tabs-link a{
+	text-decoration: none !important;
+	font-family: Montserrat, sans-serif;
+	font-size: 15px;
+	opacity: 1;
+	color: black;
+	display: inline-block;
+	position: relative;
+	transition: color .2s linear;
+}
+.tabs-link a:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: red;
+	position: absolute;
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+.tabs-link a:hover:after{
+	opacity: 1;
+}
+.tabs-link a:hover{
+	color: red;
+}
+
+.tabs-link li{
+	margin:15px 0;
+}
+
+/* Слайдер */
+.slider{
+	margin-top: 35px;
+	margin-bottom: 40px;
+}
+.slider-item{
+	padding: 0px 17px;
+}
+.slider-item img{
+	max-height: 400px;
+	height: 100%;
+}
+.slick-slider{
+
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{
+
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{
+
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	max-width: 1100px;
+
+
+}
+/* Слайд */
+.slick-slide{
+
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+
+}
+/* Слайд основной */
+.slick-slide.slick-current{
+
+}
+/* Слайд по центру */
+.slick-slide.slick-center{
+
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{
+
+}
+/* Стрелка */
+.slick-arrow{
+
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+
+}
+/* Точки (булиты) */
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin:10px 5px;
+}
+/* Активная точка */
+.slider .slick-dots li.slick-active button{
+	background-color: red;
+}
+/* Элемент точки */
+.slider .slick-dots li button{
+	font-size: 0;
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border-color: red;
+	border-radius: 50%;
+}
+
+
+hr{
+	width: 100%;
+	color: #B5B5B5;
+	align:center;
+	size:2px;
+	opacity: 0.7;
+}
+
+.btn-back{
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	padding-top:70px;
+	padding-left: 100px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	
+}
+
+.btn-back:hover{
+	color: blue;
+}
+
+
+/*адаптив Влада*/
+
+@media screen and (max-width: 1920px) {
+	.c3__h1__1 {
+/*		margin-right: 72%;*/
+	}
+	.main-title{
+		margin-top:30px;
+	}
+	.block-body-tag{
+		font-size: 12px;
+	}
+	.block-body-title{
+		font-size: 18px;
+	}
+	.block-text{
+		padding-left: 33%;
+		padding-top:20px;
+	}
+	.block-tag{
+		font-size: 12px;
+	}
+	.tabs-link{
+		font-size: 15px;
+	}
+	.block-link-cont{
+		margin-left: 22%;
+	}
+}
+
+/* 1600 на 900 */
+
+@media screen and (max-width: 1600px) {
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 3.2vh;
+	}
+	.main-title{
+		margin-top:0px;
+	}
+	.block-body-tag{
+		font-size: 12px;
+	}
+	.block-body-title{
+		font-size: 18px;
+	}
+	.block-text{
+	padding-top: 10px;
+	padding-left: 23%;
+	}
+	.block-tag{
+		font-size: 12px;
+	}
+	.tabs-link{
+		font-size: 15px;
+	}
+	.block-link-cont{
+		margin-left: 8%;
+	}
+}
+
+/* 1536 на 864 */
+
+/* 1440 на 900 */
+
+@media screen and (max-width: 1441px) {
+
+	.rectangle__3 {
+		width: 50%;
+		margin-left: 0;
+		margin-left: 10%;
+	}
+	.animate__animated.animate__fadeInUp.E {
+		width: 25%;
+		margin-right: 22%;
+		height: 30vh;
+	}
+	.animate__animated.animate__fadeInRight.M {
+		width: 30%;
+		margin-right: 10%;
+		height: 35vh;
+	}
+	.animate__animated.animate__fadeInLeft.L {
+		width: 23%;
+		height: 40vh;
+		margin-left: 20%;
+	}	
+	.animate__animated.animate__fadeInDown.P {
+		height: 40vh;
+	}
+	.c3__h1__1 {
+/*		margin-right: 70%;*/
+	}
+	.c3__h1__2 {
+/*		margin-left: 70%;*/
+	}
+	.f__block__1 {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1320px) {
+		.c3__h1__1 {
+		font-size: 3vh;
+	}
+	.c3__h1__2 {
+		font-size: 3vh;
+	}	
+}
+
+@media screen and (max-width: 1366px) {
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		margin-left: 1%;
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.square {
+		margin-top: 40%;
+	}
+}
+
+@media screen and (max-width: 1197px) {
+}
+
+@media screen and (max-width: 1138px) {
+	.c3__img3__link::after {
+		font-size: 6vh;
+	}
+	.c3__img2__link::after {
+		font-size: 6vh;
+	}
+	.c3__img1__link::after {
+		font-size: 6vh;
+	}
+	.bottom__txt {
+		font-size: 5vh;
+	}
+
+}
+
+/* 1024 на 600 */
+
+@media screen and (max-width: 1024px) {
+	.rectangle__4 {
+		margin-right: 50%;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 2.8vh;
+	}
+}
+
+@media screen and (max-width: 886px) {
+
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 2.8vh;
+	}
+	.f__block__1__3__h1 {
+		font-size: 3.2vh;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 2.8vh;
+	}
+	.f__block__1__3__h1 {
+		font-size: 3vh;
+	}
+	.f__block__2__h1 {
+		font-size: 3vh;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.f__b1__h1__1, .f__b1__h1__2, .f__b1__h1__3 {
+		font-size: 2.8vh;
+	}
+	.f__block__1__3__h1 {
+		font-size: 2.5vh;
+	}
+	.h2 {
+		font-size: 2.4vh;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.f__block__1__3__h1 {
+		font-size: 2vh;
+	}	
+	.f__block__1__1 img {
+    width: 6vh;
+    height: 6vh;
+	}
+	.f__block__1__2 img {
+    width: 6vh;
+    height: 6vh;
+	}
+	.f__block__1__3 img {
+    width: 6vh;
+    height: 6vh;
+	}
+}
+
+@media screen and (max-width: 532px) {
+	.main__li {
+		font-size: 2.8vh;
+	}
+	.container {
+		width: auto;
+	}
+	.ul__main {
+		display: none;
+	}
+	.link__2, .link__3 {
+		display: none;
+	}
+	.search {
+		display: none;
+	}
+	.logo {
+		justify-content: flex-start;
+	}
+	.burger-menu {
+		display: flex;
+	}
+	.menu-btn {
+		display: flex;
+		align-items: center;
+	}
+	.footer {
+		display: none;
+	}	
+	.container {
+		justify-content: flex-start;
+	}
+	.c3__h1__1, .c3__h1__2 {
+		font-size: 2.5vh;
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.main__li {
+		font-size: 2.8vh;
+	}
+}
+
+/*мой адаптив*/
+
+
+@media(max-width: 776px){
+	.slider-item{
+	margin:0px 5px;
+}
+.slider-item img{
+	max-height: 300px;
+	height: 100%;
+}
+.slick-track{
+	display: flex;
+	max-width: 700px;
+}
+.main-title{
+	font-size: 70px;
+}
+.block-2-cont{
+	padding-left:0px;
+}
+.block-text{
+	padding-top: 80px;
+	padding-left: 11%;
+}
+.block-body-title{
+	padding-right: 7%;
+}
+
+.block-body-desciption{
+	max-width: 400px;
+	font-size: 15px;
+}
+.block-link-cont{
+	width:420px;
+	padding: 7px 7px;
+	align-items: center;
+	margin-top:-230px;
+	margin-bottom: 200px;
+	margin-left: 5%;
+}
+ul li{
+font-size:10px;
+display:inline-block;
+padding:5px 5px;
+margin: 0;
+}
+.block-tag{
+	text-align: center;
+}
+.slider{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.btn-back{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+}
+
+@media(max-width: 320px){
+	.slider-item img{
+	max-height: 200px;
+	height: 100%;
+}
+.slick-track{
+	display: flex;
+	max-width: 320px;
+}
+.main-title{
+	font-size: 40px;
+}
+.block-text{
+	padding-left:3%;
+}
+.block-body-title{
+	padding-right: 5%;
+}
+.block-body-desciption{
+	max-width: 200px;
+	font-size: 15px;
+}
+.block-link-cont{
+	width:250px;
+	padding: 7px 7px;
+	align-items: center;
+	margin-top:-210px;
+	margin-bottom: 200px;
+	margin-left: 1%;
+}
+.slider-item img{
+	padding: 0px 10px;
+}
+.block-1-cont, .block-2-cont hr{
+	max-width:320px;
+}
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}

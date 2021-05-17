@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>	
+  <link rel="stylesheet" type="text/css" href="css/style3.css">
+  
+
+  <title>Тренды</title>
+ </head>
+ <body>
+
+ 	<header class="header" id="myHeader">
+    <div class="container">
+      <ul class="ul__main">
+         <li class="main__li"><a class="maina" href="#">Категории</a>
+              <ul class="ul__main">
+                  <li class="main__li"><a class="maina" href="#">Игры</a></li>
+                   <!--<li class="main__li"><a class="maina" href="#">Искусство</a></li>-->
+                  <li class="main__li"><a class="maina" href="#">Кулинария</a></li>
+                  <li class="main__li"><a class="maina" href="#">Мода</a></li>
+                  <li class="main__li"><a class="maina" href="#">Стихи</a></li>
+              </ul>
+
+          </li>  
+      </ul>
+          <a class="main__li" href="index.html"><img class="logo__img" src="img/logo.png" alt="Logo"></a> <!-- УКАЗАТЬ ПУТЬ ДО ЛОГО САЙТА -->
+      <ul class="ul__main">
+          <li class="main__li"><a class="maina" href="#">Контакты</a>
+              <ul class="ul__main">
+                  <li class="main__li"><a class="maina" href="#">Лиза<form action="https://vk.com/elizzankova"><button class="butt"><img class="img__cat" src="img/vk.png" alt=""></button></form><form action="
+https://www.instagram.com/elizzankova/?hl=ru"><button class="butt"><img class="img__cat" src="img/instagram.png" alt=""></button></form></a></li>
+                  <li class="main__li"><a class="maina" href="#">Саша<form action="https://vk.com/sasha_pesh"><button class="butt"><img class="img__cat" src="img/vk.png" alt=""></button></form><form action="https://www.instagram.com/sasha_pesh/"><button class="butt"><img class="img__cat" src="img/instagram.png" alt=""></button></form></a></li> <!-- УКАЗАТЬ ПУТЬ ДО ЛОГО INSTAGRAM --> <!-- УКАЗАТЬ ПУТЬ ДО ЛОГО VK -->
+                  <li class="main__li"><a class="maina" href="#">Вика<form action="https://vk.com/tvoya.otlichnitsa"><button class="butt"><img class="img__cat" src="img/vk.png" alt=""></button></form><form action="https://www.instagram.com/tvoya.otlichnitsa/"><button class="butt"><img class="img__cat" src="img/instagram.png" alt=""></button></form></a></li> <!-- УКАЗАТЬ ПУТЬ ДО ЛОГО INSTAGRAM --> <!-- УКАЗАТЬ ПУТЬ ДО ЛОГО VK -->
+                  <li class="main__li"><a class="maina" href="#">Влад<form action="https://vk.com/livio.drappazzi"><button class="butt"><img class="img__cat" src="img/vk.png" alt=""></button></form><form action="https://www.instagram.com/livio.drappazzi/"><button class="butt"><img class="img__cat" src="img/instagram.png" alt=""></button></form></a></li> <!-- УКАЗАТЬ ПУТЬ ДО ЛОГО INSTAGRAM --> <!-- УКАЗАТЬ ПУТЬ ДО ЛОГО VK -->
+              </ul>
+
+          </li>
+      </ul>
+          <div class="burger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+     
+        <ul class="menubox">
+                  <li class="dropdown">
+                    <button class="mainmenubtn">Категории</button>
+                      <div class="dropdown-child">
+                        <a class="dropdown-child__a" href="">Игры</a>
+                        <!--<li class="main__li"><a class="maina" href="#">Искусство</a></li>-->
+                        <a class="dropdown-child__a" href="">Кулинария</a>
+                        <a class="dropdown-child__a" href="">Мода</a>
+                      </div>
+                  </li>
+                  <li class="dropdown">
+                    <button class="mainmenubtn">Контакты</button>
+                      <div class="dropdown-child">
+                        <a class="dropdown-child__a" href="#">Лиза<form action="https://vk.com/elizzankova"><button class="butt"><img class="img__cat" src="img/vk.png" alt=""></button></form><form action="
+https://www.instagram.com/elizzankova/?hl=ru"><button class="butt"><img class="img__cat" src="img/instagram.png" alt=""></button></form></a>
+                        <a class="dropdown-child__a" href="#">Саша<form action="https://vk.com/sasha_pesh"><button class="butt"><img class="img__cat" src="img/vk.png" alt=""></button></form><form action="https://www.instagram.com/sasha_pesh/"><button class="butt"><img class="img__cat" src="img/instagram.png" alt=""></button></form></a>
+                        <a class="dropdown-child__a" href="#">Вика<form action="https://vk.com/tvoya.otlichnitsa"><button class="butt"><img class="img__cat" src="img/vk.png" alt=""></button></form><form action="https://www.instagram.com/tvoya.otlichnitsa/"><button class="butt"><img class="img__cat" src="img/instagram.png" alt=""></button></form></a>
+                        <a class="dropdown-child__a" href="#">Влад<form action="https://vk.com/livio.drappazzi"><button class="butt"><img class="img__cat" src="img/vk.png" alt=""></button></form><form action="https://www.instagram.com/livio.drappazzi/"><button class="butt"><img class="img__cat" src="img/instagram.png" alt=""></button></form></a>
+                      </div></li>
+                <li><a class="menu-item email" href="https://mail.google.com/">
+                  <img src="img/mail.png" alt="mail">
+                  <h1 class="menu-item__h1">fyh@gmail.com</h1>
+                </a></li>
+                <li><a class="menu-item instagr" href="https://www.instagram.com/find.yourhobby/">
+                  <img src="img/instagram.png" alt="instagram">
+                  <h1 class="menu-item__h1">@fyhhh</h1>                  
+                </a></li>
+                <li><a class="menu-item vkont" href="#">
+                  <img src="img/vk.png" alt="vk">
+                  <h1 class="menu-item__h1">https://vk.com/fyh</h1>                  
+                </a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+	 <section class="intro">
+	 	<div class="container-my">
+	 		<h1 class="main-title">
+	 			Тренды
+	 			<span class="main-title-shadow">
+	 				Тренды
+	 			</span>
+	 		</h1>
+	 		<div class="row">
+<!--первая колонка-->
+	 			<div class="column">
+
+				<div class="trend-block trend-block-lg">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр1.1.jpg" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренды</p>
+						<p class="trend-block-body-title">Полупрозрачные материалы</p>
+						<p class="trend-block-body-desciption">
+Юбки и платья из тюля и шифона – один из самых смелых трендов будущего сезона. Дизайнеры Sportmax, Alberta Ferretti и Christian Dior предлагают не скромничать, и предъявить окружающим нижнее белье. Так что есть повод приобрести к весне несколько потрясающе красивых комплектов.						</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+
+				<div class="trend-block ">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр1.2.jpg" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренды</p>
+						<p class="trend-block-body-title">Белье как предмет гардероба</p>
+						<p class="trend-block-body-desciption">
+Проблему нехватки витамина D дизайнеры решили по-своему: в весенне-летних коллекциях огромное количество топов-бра и микрошорт, которые, перемешавшись с другими вещами, стали полноправными членами модного гардероба. Примеры – у Miu Miu, Chanel и Alberta Ferretti.						</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+
+		<div class="trend-block ">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр1.3.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренды</p>
+						<p class="trend-block-body-title">Цветы</p>
+						<p class="trend-block-body-desciption">
+Ну и конечно же, весна и лето – это пора цветения. В том числе – и в модном гардеробе. Собираем букеты в коллекциях Marchesa, Giambattista Valli и Andrew Gn.</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+			</div>
+
+<!--2 колонка -->
+	<div class="column">
+
+		
+
+				<div class="trend-block">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр2.1.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренд</p>
+						<p class="trend-block-body-title">Акцент на плечи</p>
+						<p class="trend-block-body-desciption">
+По-прежнему дизайнеры сосредоточены на плечах. Пышные буфы и рукав gigot продемонстрировали в своих коллекциях Zuhair Murad и Zimmermann, острыми плечами а ля пагода удивлял Balmain.						</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+				<div class="trend-block">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр2.2.jpg" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренд</p>
+						<p class="trend-block-body-title">Сетка</p>
+						<p class="trend-block-body-desciption">
+Одним из самых популярных материалов следующего сезона будет сетка. Дизайнеры вдохновлялись как рыбацкими снастями, так и спортивной тематикой. Что из этого вышло – смотрим в коллекциях Louis Vuitton, Balenciaga и Acne Studios.						</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+				<div class="trend-block">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр2.3.jpg" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренд</p>
+						<p class="trend-block-body-title">“Уютные” платья</p>
+						<p class="trend-block-body-desciption">
+Длинное платье нынче – не только прерогатива вечерней моды. Выполненные из трикотажа, стрейч-хлопка, кашемира, джерси и подобных материалов, они мягко и нежно облегают фигуру и гарантируют, что вам будет и уютно, и удобно. Примеры – у Michael Kors, David Koma и Khaite.						</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+
+				<div class="trend-block">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр3.1.jpg" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренд</p>
+						<p class="trend-block-body-title">Яркие полоски</p>
+						<p class="trend-block-body-desciption">
+В Лондоне и Париже дизайнеры не просто «расчертили» одежду полосками, но и разукрасили их в яркие цвета. Среди адептов этого радужного принта были Versace, Adeam и Christian Dior.						</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+				<div class="trend-block">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр3.2.jpg" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренд</p>
+						<p class="trend-block-body-title">Оранжевый</p>
+						<p class="trend-block-body-desciption">
+Цвет апельсина и ржавчины, щербета и дорожных конусов – на весну дизайнеры активно предлагают оранжевую палитру. Issey Miyake и Sportmax выбрали оранжевые оттенки для своих платьев, а Versace и Jason Wu предложили яркий total look.						</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+				<div class="trend-block">
+					<div class="trend-block-image">
+						<div class="trend-block-image-red">
+							<img src="img/тр3.3.jpg" alt="" class="img-fluid"></div>
+					</div>
+					<div class="trend-block-body">
+						<p class="trend-block-body-tag">Тренд</p>
+						<p class="trend-block-body-title">Социальная дистанция</p>
+						<p class="trend-block-body-desciption">
+Мода — это следствие того, что происходит в мире, или реакция на происходящее. Так что маски не только прочно вошли в нашу жизнь, но и стали частью гардероба. И, как оказалось, они могут быть и модными, и весьма оригинальными. В этом предлагают убедиться Rick Owens, Alice + Olivia и Christian Siriano.						</p>
+						<div class="trend-block-body-underline trend-block-body-underline-red"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="button">
+			<a class="btn-back" href="index.html">На главную</a>
+		</div>
+
+
+	 				
+	 	</div>
+	</section>
+
+
+ <script type="text/javascript">
+      
+      // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky"); 
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+
+<!--footer-->
+
+
+	 <footer class="footer wow animate__animated animate__fadeIn">
+    <div class="container__4">
+      <div class="f__block__1">
+
+        <a class="f__block__1__1" href="https://mail.google.com/">
+          <img src="img/mail.png" alt=""><!-- УКАЗАТЬ ПУТЬ ДО ЛОГО GMAIL -->
+          <h1 class="f__block__1__3__h1">fyh@gmail.com</h1>
+        </a>
+
+        <a class="f__block__1__2" href="https://www.instagram.com/find.yourhobby/">
+          <img src="img/instagram.png" alt=""><!-- УКАЗАТЬ ПУТЬ ДО ЛОГО INSTAGRAM -->
+          <h1 class="f__block__1__3__h1">@fyhhh</h1>
+        </a>
+
+        <a class="f__block__1__3" href="">
+          <img src="img/vk.png" alt=""><!-- УКАЗАТЬ ПУТЬ ДО ЛОГО VK -->
+          <h1 class="f__block__1__3__h1">https://vk.com</h1>
+        </a>  
+
+      </div>
+
+      <div class="f__block__2"><h1 class="f__block__2__h1">©Internet Explorers, 2021</h1></div>
+    </div>
+  </footer>
+
+
+ 	</body>
+</html>

@@ -1,0 +1,445 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+
+font-family: 'Montserrat';
+/*УКАЗАТЬ ПУТЬ ДО ШРИФТА Montserrat-Regular.ttf */
+src: url('../LD2_fonts/Montserrat-Regular.ttf');
+
+
+font-weight: normal;
+font-style: normal;
+
+}
+
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500i&amp;subset=cyrillic');
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=cyrillic);
+ 
+ .body {
+
+ 	display: flex;
+ 	font-family: Montserrat, sans-serif;
+
+ }
+
+ *, *:after, *:before {
+   transition: .5s ease-in-out;
+   /* добавим плавность переходов для всех элементов страницы*/
+}
+
+ .header {
+	
+	position: absolute;
+	height: 10vh;
+	width: 100%;
+	line-height: 1;
+	background-color: #ffffff;
+	text-decoration: none;
+	z-index: 9999;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	width: 20%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.logo__link {
+
+}
+
+.logo__img {
+	height: 10vh;
+	width: 10vh;
+}
+
+.links {
+	width: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.link__1, .link__2, .link__3 {
+	width: 33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.link__1 {
+
+}
+
+.link__2 {
+	
+}
+
+.link__3 {
+
+}
+
+.links a {
+	font-family: Montserrat, sans-serif;
+	font-size: 4vh;
+	white-space: nowrap;
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.links a:hover {
+	text-decoration: underline; 
+}
+
+.search {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.form {
+	width: 70%;
+	height: 4vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+	width: 90%;
+	height: 4vh;
+	border-radius: 42px;
+	border: 2px solid #black;
+	background: white;
+	outline: none;
+	transition: .3s linear;
+	font-family: Montserrat ;
+}
+
+.button {
+	width: 4vh;
+	height: 4vh;
+	background: none;
+	border: 2px solid #black;
+	outline: none;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img {
+	width: 3vh;
+	height: 3vh;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+	.links, .link__1, .link__2, .link__3 {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+	
+	.container {
+		width: 100%; 
+		display: flex; 
+		flex-direction: column; 
+		align-items: center;
+		justify-content: center;
+	}
+	.links {
+		width: 50%;
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.logo__img {
+		height: 10vh;
+		width: 10vh;
+	}
+	.logo__link {
+		margin: 0;
+	}
+	.links {
+		margin-bottom: 1vh;
+		width: 80%;
+	}
+	.link1, .link__2, .link__3 {}
+	.link__1 {
+		margin-right: 25%;
+	}
+	.link__2 {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.link__3 {
+		margin-left: 25%;
+	}
+	.links a {
+		font-size: 3.5vh;
+	}	
+	.search {
+		margin: 0;
+		width: 70%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.form {
+		margin-top: 1vh;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		margin-top: 1vh;
+	}
+	.input {
+		height: 2vh;
+		margin-bottom: 0.5vh;
+	}
+	.button {
+		display: none;
+	}
+	.img {
+		height: 2vh;
+		width: 2vh;
+	}
+	.links {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.links a {
+		font-size: 2.5vh;
+	}	
+	.logo__img {
+		height: 8vh;
+		width: 8vh;
+	}
+}
+
+/*my code*/
+.container_2{
+	display: flex;
+	max-width: 1200px;
+	
+	margin:0 auto;
+}
+.intro{
+	display: flex;
+	
+}
+.title_1{
+	display: flex;
+	font-size: 140px;
+	margin-top:53px;
+	margin-left:260px;
+	color:#FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	z-index: 3;
+	position: absolute;
+}
+
+.title_2{
+	display: flex;
+	font-size: 180px;
+	margin-top:60px;
+	margin-left:208px;
+	color:#FFF;
+	opacity: .4;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	z-index: 2;
+	position: absolute;
+}
+
+.blue_block{
+display: flex;
+position: relative;
+width: 910px;
+height: 550px;
+margin-top: 67px;
+margin-left: 250px;
+z-index: 0;
+background: #0000FF;
+}
+
+.intro_img{
+display: flex;
+position: absolute;
+width: 900px;
+height: 468px;
+margin-left: 209px;
+margin-top: 108px;
+z-index: 1;
+}
+
+/* навигация по сайту*/
+.intro_link{
+	display: flex ;
+	width: 100%;
+}
+.intro_link_1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.intro_link_a{
+
+	display: flex ;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	font-size: 18px ;
+	margin-left:254px;
+	margin-top: 40px;
+	margin-bottom: 35px;
+	text-decoration: none ;
+	color: #000000 ;
+	text-align: center ;
+	justify-content: center ;
+	z-index: 1 ;
+	position: relative;
+	transition: color .1s linear;
+}
+
+.intro_link_a:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top:23px;
+	background-color: #FF0000;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .1s linear;
+}
+
+.intro_link_a:hover{
+	color: #FF0000;
+}
+.intro_link_a:hover:after{
+	opacity: 1;
+}
+
+/* цитата*/
+
+.text_quote{
+	display: flex;
+	width: 630px;
+	height: 190px;
+	text-align: center ;
+	justify-content: center ;
+	font-size: 48px;
+	margin:60px 375px 70px;
+	color:#000000;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	z-index: 1;
+	
+}
+
+.text_author{
+	display: flex;
+	width: 100%;
+	width: 630px;
+	text-align: center;
+	margin-top:230px;
+	margin-left: 850px;
+	font-size: 24px;
+	color:#000000;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	z-index: 1;
+}
+.grey_block{
+	width: 1085px;
+	height: 300px;
+	margin-left: 180px;
+	background: #ECECEC;
+	position: relative;
+	z-index: 0;
+}
+@media screen and (max-width: 1200px){
+	.container_2{
+		max-width: 970px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.container{
+		max-width: 750px;
+	}
+}
+@media screen and (max-width: 767px){
+	.container{
+		max-width: none;
+	}
+}
