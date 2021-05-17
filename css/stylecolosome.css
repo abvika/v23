@@ -600,7 +600,7 @@ section{
 	color: red;
 }
 
-li{
+.tabs-link li{
 	margin:15px 0;
 }
 
