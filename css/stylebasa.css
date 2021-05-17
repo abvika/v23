@@ -876,7 +876,7 @@ section .up-block-image{
 		margin-top:-40vh;
 	}
 	.up-cloth-text-block-right{
-		margin-top:-55vh;
+		margin-top:-50vh;
 	}
 	.main-title{
 		margin-top:15px;
@@ -1290,6 +1290,7 @@ section .up-block-image{
 
 	.up-text-block-right{
 		align-items: right;
+		margin-top:-100px;
 	}
 	.up-text-block-left{
 		align-items: left;
@@ -1299,15 +1300,18 @@ section .up-block-image{
 	}
 	.down-text-block-right{
 		align-items: right;
+		margin-top:-20px;
 	}
 	.down-text-block-right-2{
 		align-items: left;
 	}
 	.up-cloth-text-block-left{
 		align-items: left;
+		margin-left:-7px;
 	}
 	.up-cloth-text-block-right{
 		align-items: right;
+		margin-top:-15px;
 	}
 	.down-shoes-text-block-left{
 		align-items: left;
