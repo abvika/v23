@@ -634,7 +634,45 @@ section{
 
 
 /*адаптив Влада*/
+.asas {
+display: none;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 3vh;
+} 
+@media screen and (max-width: 511px) {
+.asas {
+display: block;
+font-style: italic;
+margin-left: 17%;
+z-index: 9999;
+}
+}
 
+@media screen and (max-width: 461px) {
+.asas {
+margin-left: 14%;
+}
+}
+
+@media screen and (max-width: 426px) {
+.asas {
+margin-left: 12%;
+}
+}
+
+@media screen and (max-width: 416px) {
+.asas {
+margin-left: 10%;
+}
+}
+
+@media screen and (max-width: 376px) {
+.asas {
+margin-left: 8%;
+}
+}
 @media screen and (max-width: 1920px) {
 	.c3__h1__1 {
 /*		margin-right: 72%;*/
